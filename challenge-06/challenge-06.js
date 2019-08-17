@@ -38,11 +38,11 @@ function showTeamPosition(position){
     var index = position - 1;
     var team = teams[index];
 
-    if(position <= 5){
-        return 'O time que está em '+ position +'º lugar é o ' + team + '.';
+    if(position < 1 || position > 5){
+        return 'Não temos a informação do time que está nessa posição.';
     }
 
-    return 'Não temos a informação do time que está nessa posição.';
+    return 'O time que está em '+ position +'º lugar é o ' + team + '.';
 }
 
 /*
